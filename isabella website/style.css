@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-image: url(hero-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+ul.navigation-list-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: .5em;
+}
+
+ul.navigation-list-box > li {
+    padding: .3em 1.5em;
+}
+
+ul.navigation-list-box > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+div.logo-box {
+    width: fit-content;
+}
+
+.heading-box {
+    text-align: center;
+    position: relative;
+    color: white;
+    margin: 0 auto;
+    top: 25vh;
+}
+
+.heading-box > h1 {
+    font-size: 2.5em;
+}
+
+.heading-box > h1 > span {
+    display: block;
+    font-weight: 300;
+    font-size: .7em;
+}
+
+.heading-box > button {
+    font-size: 1.15rem;
+    padding: .7em 2.5em;
+    text-decoration: none;
+    background: none;
+    border: 2px solid;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (min-width: 50em){
+    .heading-box > h1 {
+        font-size: 3em;
+    }
+
+    .heading-box > button {
+        font-size: 1.25rem;
+    }
+}
+
+section.about-section {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 6em 0;
+    position: relative;
+}
+
+.about-section h1 {
+    background: black;
+    width: fit-content;
+    position: absolute;
+    padding: .6em;
+    font-size: 2em;
+    margin: 0;
+    top: 0;
+    left: 25%;
+}
+
+.about-story-box {
+    background-color: black;
+    width: 30em;
+    margin: 0 auto;
+    padding: 1.5em 2em;
+    position: relative;
+}
+
+.about-story {
+    padding: 2em;
+    border: 3px solid green;
+    line-height: 1.4;
+}
+
+@media (min-width: 760px){
+
+    section.about-section {
+        background: transparent;
+    }
+
+    div.about-image {
+        background-image: url(who-we-are.jpg);
+        background-position: center right;
+        background-repeat: no-repeat;
+        width: 75%;
+        height: 30em;
+        position: absolute;
+        top: 0;
+        left: 13%;
+        z-index: -1;
+    }
+    .about-story-box {
+        left: 5%;
+        margin: 0;
+        top: -13em;
+    }
+}
+
+.gallery-heading-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+.gallery-heading-box > span {
+    width: 7em;
+    height: 3px;
+    background: red;
+    display: block;
+}
+
+.gallery-heading-box > h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.all-images-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+@media (min-width: 760px){
+    .all-images-box {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gallery-heading-box > h1 {
+        font-size: 3em;
+    }
+}
+
+section.signup-section {
+    background: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+}
+
+.signup-heading {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.signup-heading > span {
+    font-weight: 300;
+    font-size: .8em;
+}
+
+section.signup-section button {
+    font-size: 1.15rem;
+    padding: .7em 2.5em;
+    text-decoration: none;
+    background: none;
+    border: 2px solid;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (min-width: 760px){
+    .signup-heading {
+        font-size: 3.5em;
+    }
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 2.5em;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer ul li:first-child {
+    font-size: 1.15rem;
+    font-weight: 900;
+    margin-bottom: .5em;
+}
+
+footer ul li a{
+    color: rgba(255, 255, 255, 0.747);
+    text-decoration: none;
+    transition: all ease 350ms;
+}
+
+footer ul li a:hover,
+footer ul li a:focus {
+    text-decoration: underline;
+}
+
+@media (min-width: 760px){
+    footer {
+        padding: 5em;
+    }
+    footer p {
+        font-size: 1.25rem;
+    }
+
+    footer ul li:first-child {
+        font-size: 1.25rem;
+    }
+    
+    footer ul li a {
+        font-size: 1.15rem;
+    }
+}
