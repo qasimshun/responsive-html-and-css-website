@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.45;
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background: black;
+    color: white;
+}
+
+
+#nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+}
+
+#ul {
+    flex-direction: row;
+}
+
+#ul li a {
+    color: cyan;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+#ul li a:hover,
+#ul li a:focus {
+    background: wheat;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.image {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.hero {
+    position: relative;
+}
+
+.section-content {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    transform: translate(15%);
+    width: 80%;
+}
+
+.section-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: .2em;
+}
+
+.section-content p {
+    margin-bottom: .5em;
+}
+
+.section-content button,
+.right button {
+    padding: .5em 1.5em;
+    font-size: inherit;
+    border: none;
+    color: rgba(255, 255, 255, 0.87);
+    background: rgba(0, 0, 0, 0.733);
+}
+
+
+.right {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.right h1 {
+    margin-bottom: .3em;
+    font-size: 2.2rem;
+}
+
+.right p {
+    margin-bottom: 10px;
+}
+
+.another {
+    background: rgba(0, 0, 0, 0.747);
+    color: rgba(255, 255, 255, 0.801);
+}
+
+
+
+@media (min-width: 1000px){
+    .another {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .right {
+        margin: 0;
+    }
+}
+
+.last {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+}
+
+.one, .two, .three {
+    background: wheat;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    overflow: auto;
+}
+
+.two {
+    background: lightgray;
+}
+
+i {
+    font-size: 2rem;
+}
+
+@media (min-width: 760px){
+    .last {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.856);
+    color: rgba(255, 255, 255, 0.884);
+    text-align: center;
+    padding: 15px;
+}
+
+.story {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgba(211, 211, 211, 0.671);
+    padding: 2.5rem;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.people {
+    background: url(/image_resources/test-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.people > h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.guest {
+    background: wheat;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    place-items: center;
+    padding: 10px;
+}
+
+.guest img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.contact {
+    padding: 2rem;
+}
+
+.contact h1 {
+    font-size: 2rem;
+}
+
+.contact > p {
+    margin-bottom: 10px;
+}
+
+div.form-control {
+    align-items: flex-start;
+}
+
+.form-control > *:last-child {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 3px;
+    font-size: 1.15rem;
+}
+
+#btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.phone {
+    background: rgba(0, 0, 0, 0.808);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px;
+    text-align: center;
+}
+
+.five, .six, .four {
+    justify-content: flex-start;
+}
+
+.five > *,
+.six > *,
+.four > * {
+    margin-bottom: 10px;
+}
